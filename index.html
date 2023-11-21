@@ -13,48 +13,76 @@
     <title>Daryush Balsara</title>
 </head>
 
-    <body class="d-flex flex-column min-vh-100">
+    <body class="pt-5">
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Daryush Balsara</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Your Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <!-- Add more navbar items as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container-md">
+            <h2 class="text-center mb-6">Projects</h2>
+
+            <!-- Sample Project Item -->
+            <div class="row">
+                <div class="col-md-6 mb-6">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Scraper/Machine Learning Application, City of Vancouver</h5>
+                            <p class="card-text">I lead a team where we designed a machine learning using python and tensorflow. We had weekly Scrum meetings were everyone had an understanding of the project requirements and what the key stakeholders wanted. We created a GUI front end appliction to interface with the machine learning app. It takes in incomplete CSV data and then fills in the empty fields using what it learned from previous data then lest you download the newly created file in CSV or Excel format.</p>
+                            <a href="https://github.com/dbalsara2003/COV" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
                 </div>
-            </nav>    
+                <div class="col-md-6 mb-6">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Snap2Check, TeraDrive</h5>
+                            <p class="card-text">I lead a team where we designed a machine learning using python and tensorflow. We had weekly Scrum meetings were everyone had an understanding of the project requirements and what the key stakeholders wanted. We created a GUI front end appliction to interface with the machine learning app. It takes in incomplete CSV data and then fills in the empty fields using what it learned from previous data then lest you download the newly created file in CSV or Excel format.</p>
+                            <a href="https://github.com/Jollysquire/3900-4900-TeraDrive" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
 
-            </header>
+            </div>
 
-        <section id="about">
-            <h2>About Me</h2>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-5">
+        <div class="container-md">
+            <h2 class="text-center mb-4">About Me</h2>
             <p>
-            Hello! I am a passionate and dedicated college student pursuing a degree in Computer Science. I am currently enrolled at British Columbia Institute of Technology (BCIT).
-            I am intrested in Networking, Cybersecurity and DevOps. In my first 2 years at BCIT I was in a program called Computer Information Technology (CIT). In this program 
-            In this program I learned many use skills like web development, networking, CI/CD pipelines, and programming.
-            <br>
-            During my first 2 years I excelled in my networking, DevOps and databases courses which I had a great intrest in. These skills helped me in the projects I did for the City of Vancouver
-            and TeraDrive.
-            <br>
-            I am excited to enter the IT industry and gain even more experince and knowledge and expand my skillset.
+                Hello! I am a passionate and dedicated college student pursuing a degree in Computer Science. I am currently enrolled at British Columbia Institute of Technology (BCIT).
+                I am interested in Networking, Cybersecurity, and DevOps. In my first 2 years at BCIT, I was in a program called Computer Information Technology (CIT). In this program,
+                I learned many useful skills like web development, networking, CI/CD pipelines, and programming.
+                <br>
+                During my first 2 years, I excelled in my networking, DevOps, and databases courses which I had a great interest in. These skills helped me in the projects I did for the City of Vancouver
+                and TeraDrive.
+                <br>
+                I am excited to enter the IT industry and gain even more experience and knowledge and expand my skillset.
             </p>
-        </section>
+        </div>
+    </section>
 
         <section id="Skills">
             <h2>Skills</h2>
@@ -77,7 +105,6 @@
             <div class="container mt-3">
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <!-- Inside your <div class="custom-control custom-switch"> -->
                         <div class="custom-control custom-switch d-flex align-items-center">
                             <span id="theme-icon" class="mr-2" style="z-index: 1;"><i class="fas fa-moon"></i></span>
                             <input type="checkbox" class="custom-control-input" id="theme-toggle" style="z-index: 2;">
@@ -86,6 +113,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="contact">
+
             </div>
         </footer>
         
@@ -97,8 +127,10 @@
         <!-- Load Font Awesome JavaScript (for icons) -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 
-        <!-- Include your theme-switching JavaScript -->
+        <!-- Include JavaScript -->
         <script src="./JS/theme-switch.js"></script>
+        <script src="script.js"></script>
+
 
     </body>
 
