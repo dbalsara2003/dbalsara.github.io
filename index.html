@@ -3,87 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Load Bootswatch themes by default -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" id="light-theme">
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" id="dark-theme">
     <title>Daryush Balsara</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100">
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Daryush Balsara</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Daryush Balsara</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>    
+
+            </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+            Hello! I am a passionate and dedicated college student pursuing a degree in Computer Science. I am currently enrolled at British Columbia Institute of Technology (BCIT).
+            I am intrested in Networking, Cybersecurity and DevOps. In my first 2 years at BCIT I was in a program called Computer Information Technology (CIT). In this program 
+            In this program I learned many use skills like web development, networking, CI/CD pipelines, and programming.
+            <br>
+            During my first 2 years I excelled in my networking, DevOps and databases courses which I had a great intrest in. These skills helped me in the projects I did for the City of Vancouver
+            and TeraDrive.
+            <br>
+            I am excited to enter the IT industry and gain even more experince and knowledge and expand my skillset.
+            </p>
+        </section>
+
+        <section id="Skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: C, Python, JavaScript, NODE, React, SQL</li>
+                <li>Tools: Git, Ansible, Teraform, AWS, Azure, Docker, Kubernetes, Nginx</li>
+                <li>[Any other relevant skills]</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="dbalsara2003@gmail.com">dbalsara2003@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/daryush-balsara-b880a1239/" target="_blank"><img src="./assets/LI-In-Bug.png" alt="LinkedIn Logo " width="30" height="30">Daryush Balsara</a></p>
+            <p>GitHub: <a href="https://www.github.com/dbalsara2003" target="_blank"><img src="./assets/github-mark.png" alt="GitHub Logo " width="30" height="30">dbalsara2003</a></p>
+        </section>
+
+        <footer class="mt-auto bg-dark text-white p-3 text-center">
+    <p>&copy; 2023 Daryush Balsara. All rights reserved.</p>
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <!-- Inside your <div class="custom-control custom-switch"> -->
+                <div class="custom-control custom-switch d-flex align-items-center">
+                    <span id="theme-icon" class="mr-2" style="z-index: 1;"><i class="fas fa-moon"></i></span>
+                    <input type="checkbox" class="custom-control-input" id="theme-toggle" style="z-index: 2;">
+                    <label class="custom-control-label" for="theme-toggle" style="z-index: 1;"></label>
+                    <span id="theme-icon" class="ml-2" style="z-index: 1;"></span>
+                </div>
             </div>
-        </nav>    
+        </div>
+    </div>
+</footer>
+        
+        <!-- Include Bootstrap JS and Popper.js for Bootstrap functionality -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-        </header>
+        <!-- Load Font Awesome JavaScript (for icons) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-        Hello! I am a passionate and dedicated college student pursuing a degree in Computer Science. I am currently enrolled at British Columbia Institute of Technology (BCIT).
-        I am intrested in Networking, Cybersecurity and DevOps. In my first 2 years at BCIT I was in a program called Computer Information Technology (CIT). In this program 
-        In this program I learned many use skills like web development, networking, CI/CD pipelines, and programming.
-        <br>
-        During my first 2 years I excelled in my networking, DevOps and databases courses which I had a great intrest in. These skills helped me in the projects I did for the City of Vancouver
-        and TeraDrive.
-        <br>
-        I am excited to enter the IT industry and gain even more experince and knowledge and expand my skillset.
-        </p>
-    </section>
-
-    <section id="Skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: C, Python, JavaScript, NODE, React, SQL</li>
-            <li>Tools: Git, Ansible, Teraform, AWS, Azure, Docker, Kubernetes, Nginx</li>
-            <li>[Any other relevant skills]</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="dbalsara2003@gmail.com">dbalsara2003@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/daryush-balsara-b880a1239/" target="_blank"><img src="./assets/LI-In-Bug.png" alt="LinkedIn Logo " width="30" height="30">Daryush Balsara</a></p>
-        <p>GitHub: <a href="https://www.github.com/dbalsara2003" target="_blank"><img src="./assets/github-mark.png" alt="GitHub Logo " width="30" height="30">dbalsara2003</a></p>
-    </section>
-
-    <footer class="mt-auto bg-dark text-white p-3 text-center">
-        <p>&copy; 2023 Daryush Balsara. All rights reserved.</p>     
-            <div class="container mt-3">
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="theme-toggle">
-                    <label class="custom-control-label" for="theme-toggle">Toggle Dark Mode</label>
-                </div>        
-            </div> 
-    </footer>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script src="./JS/theme-switch.js"></script>
+        <!-- Include your theme-switching JavaScript -->
+        <script src="./JS/theme-switch.js"></script>
 
     </body>
 
